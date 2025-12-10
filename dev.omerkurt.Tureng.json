@@ -1,7 +1,7 @@
 {
   "app-id": "dev.omerkurt.Tureng",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "46",
+  "runtime-version": "49",
   "sdk": "org.gnome.Sdk",
   "command": "turengvocabulary",
   "finish-args": [
@@ -25,20 +25,6 @@
   ],
   "modules": [
     "python3-modules.json",
-    {
-      "name": "blueprint",
-      "cleanup": [
-        "*"
-      ],
-      "buildsystem": "meson",
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
-          "commit": "2a39a16391122af2f3d812e478c1c1398c98b972"
-        }
-      ]
-    },
     {
       "name": "Tureng",
       "builddir": true,
